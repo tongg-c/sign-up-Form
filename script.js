@@ -49,15 +49,16 @@ function checkPassword(){
 
 
 submitButton.addEventListener('click', () =>{
-    if(confirmPassword !== password){
-        alert("Passwords do not match")
-    }
     if(confirmPassword.length < 6 || password.length < 6){
         alert("Password has to be at least 6 characters");
         return
     }
+    if(confirmPassword !== password){
+        alert("Passwords do not match")
+        return
+    }
+
     if(confirmPassword === password){
         document.querySelector('form').submit();
     }
-   
 });
