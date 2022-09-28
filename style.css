@@ -1,0 +1,236 @@
+/* Resets default styling */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start of styling */
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'norse-bold';
+    src: url('/font/Norse-Bold.otf');
+}
+
+body{
+    display: flex;
+    background-color: rgb(248, 249, 250);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+
+    font-size: calc(16px + .7vw);
+    line-height: calc(1em + 0.5vw);
+}
+
+aside{
+    height: 100vh;
+    width: 40vw;
+    background-image: url(/img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    font-size: 5rem;
+    font-family: norse-bold;
+    position: absolute;
+    top: 20%;
+}
+
+em{
+    font-style: italic;
+
+}
+
+header img{
+    height: 100px;
+}
+
+header h1{
+    margin-top: 22px ;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.call-to-action,
+form,
+.submit-section{
+    width: 60vw;
+    padding: 0 50px;
+}
+
+.call-to-action{
+    font-weight: 500;
+}
+
+.call-to-action p:last-child{
+    margin-top: 28px;
+}
+
+form{
+    margin: 60px 0 30px 0;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+legend{
+    font-weight: 500;
+    font-size: calc(16px + .7vw);
+    margin-bottom: 8px;
+}
+
+.form-row{
+    display: flex;
+}
+
+.label-and-input{
+    display: flex;
+    flex-direction: column;
+    font-size: calc(8px + .4vw);
+    letter-spacing: .1rem;
+    font-weight: 500;
+    margin: 8px 0;
+    position: relative;
+}
+
+.label-and-input label{
+    margin-bottom: -7px;
+}
+
+.label-and-input:last-child{
+    margin-left: 60px;
+}
+
+.label-and-input p{
+    position: relative;
+    top: -5px;
+    color: red;
+    font-weight: 400;
+    letter-spacing: normal;
+    position: absolute;
+    top: 58px;
+}
+
+form input{
+    width: 20vw;
+    padding: 8px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    background-color: white;
+}
+
+form input:focus{
+    border: none;
+    outline: 1px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/* input[type="password"]:invalid:required {
+    border: none;
+    outline: 1px solid red;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+} */
+
+.submit-section{
+    padding-bottom: 0;
+}
+
+.submit-section label{
+    background-color: #596D48;
+    color: white;
+    border-radius: 7px;
+    display: block;
+    width: 35%;
+    text-align: center;
+    padding: 10px 40px;
+    margin-bottom: 25px;
+    font-size: calc(10px + .6vw);
+    font-weight: 600;
+}
+
+.submit-section label:hover{
+    cursor: pointer;
+    background-color:#56763a;
+
+}
+
+.submit-section p{
+    font-size: calc(10px + .6vw);
+}
+
+.submit-section a{
+    color: #596D48;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.submit-section a:hover{
+    text-decoration: underline;
+}
+
+.invalid{
+    border: none !important;
+    outline: 1px solid red !important;
+}
+
+
+
+
+
+

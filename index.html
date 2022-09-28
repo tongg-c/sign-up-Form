@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">   
+
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <aside>
+    <header>
+      <img src="/img/odin-lined.png" alt="Logo">
+      <h1>ODIN</h1>
+    </header>
+  </aside>
+  <main>
+    <section class="call-to-action">
+      <p>This is not a real online service! You know you need something like this in your 
+        life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+      <p>You <em>know</em> you want to.</p>
+    </section>
+
+    <form action="" method="get">
+      <legend>Let's do this!</legend>
+
+      <div class="form-row">
+        <div class="label-and-input">
+          <label for="first-name">FIRST NAME</label>
+          <input required name="firstName" id="first-name" type="text">
+        </div>
+        <div class="label-and-input">
+          <label for="last-name">LAST NAME</label>
+          <input required name="lastName" id="last-name" type="text">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="label-and-input">
+          <label for="email">EMAIL</label>
+          <input required id="email" type="email" name="email">
+        </div>
+        <div class="label-and-input">
+          <label for="phone-number">PHONE NUMBER</label>
+          <input title="Enter a 10 digit number." required name="phoneNumber" id="phone-number" type="tel" pattern='^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$'>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="label-and-input">
+          <label for="password">PASSWORD</label>
+          <input title="Enter a password between 4 and 15 characters" required id="password" type="password" name="password">
+          <p hidden></p>
+        </div>
+        <div class="label-and-input">
+          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <input required id="confirm-password" type="password">
+        </div>
+      </div>
+
+      <input type="submit" hidden/>
+    </form>
+    <section class="submit-section">
+      <label>Create Account</label>
+      <p>Already have an account? <span><a href="http://" target="_blank">Log in</a></span></p>
+    </section>
+  </main>
+</body>
+</html>
