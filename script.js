@@ -7,7 +7,7 @@ let confirmPassword;
 let password;
 
 passwordInput.addEventListener('keyup', e => {
-    if(e.target.value ===""){
+    if(e.target.value === ""){
         return
     }
     password = e.target.value;
@@ -15,13 +15,11 @@ passwordInput.addEventListener('keyup', e => {
 });
 
 confirmPassordInput.addEventListener('keyup', e => {
-    if(e.target.value ===""){
+    if(e.target.value === ""){
         return
     }
     confirmPassword = e.target.value;
     checkPassword();
-
-    
 });
 
 function checkPassword(){
@@ -57,7 +55,6 @@ submitButton.addEventListener('click', () =>{
         alert("Passwords do not match")
         return
     }
-
     if(confirmPassword === password){
         document.querySelector('form').submit();
     }

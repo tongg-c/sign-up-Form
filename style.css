@@ -44,7 +44,7 @@ table {
 }
 
 /* Start of styling */
-*{
+* {
     box-sizing: border-box;
 }
 @font-face {
@@ -52,7 +52,7 @@ table {
     src: url('/font/Norse-Bold.otf');
 }
 
-body{
+body {
     display: flex;
     background-color: rgb(248, 249, 250);
     font-family: 'Inter', sans-serif;
@@ -62,7 +62,7 @@ body{
     line-height: calc(1em + 0.5vw);
 }
 
-aside{
+aside {
     height: 100vh;
     width: 40vw;
     background-image: url(/img/halie-west-25xggax4bSA-unsplash.jpg);
@@ -70,7 +70,7 @@ aside{
     position: relative;
 }
 
-header{
+header {
     width: 100%;
     padding: 10px 0;
     display: flex;
@@ -84,20 +84,20 @@ header{
     top: 20%;
 }
 
-em{
+em {
     font-style: italic;
 
 }
 
-header img{
+header img {
     height: 100px;
 }
 
-header h1{
+header h1 {
     margin-top: 22px ;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,20 +106,20 @@ main{
 
 .call-to-action,
 form,
-.submit-section{
+.submit-section {
     width: 60vw;
     padding: 0 50px;
 }
 
-.call-to-action{
+.call-to-action {
     font-weight: 500;
 }
 
-.call-to-action p:last-child{
+.call-to-action p:last-child {
     margin-top: 28px;
 }
 
-form{
+form {
     margin: 60px 0 30px 0;
     padding-top: 25px;
     padding-bottom: 40px;
@@ -129,7 +129,7 @@ form{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-legend{
+legend {
     font-weight: 500;
     font-size: calc(16px + .7vw);
     margin-bottom: 8px;
@@ -139,7 +139,7 @@ legend{
     display: flex;
 }
 
-.label-and-input{
+.label-and-input {
     display: flex;
     flex-direction: column;
     font-size: calc(8px + .4vw);
@@ -149,15 +149,15 @@ legend{
     position: relative;
 }
 
-.label-and-input label{
+.label-and-input label {
     margin-bottom: -7px;
 }
 
-.label-and-input:last-child{
+.label-and-input:last-child {
     margin-left: 60px;
 }
 
-.label-and-input p{
+.label-and-input p {
     position: relative;
     top: -5px;
     color: red;
@@ -167,7 +167,7 @@ legend{
     top: 58px;
 }
 
-form input{
+form input {
     width: 20vw;
     padding: 8px;
     border: 1px solid #E5E7EB;
@@ -175,7 +175,7 @@ form input{
     background-color: white;
 }
 
-form input:focus{
+form input:focus {
     border: none;
     outline: 1px solid blue;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -187,11 +187,11 @@ form input:focus{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 } */
 
-.submit-section{
+.submit-section {
     padding-bottom: 0;
 }
 
-.submit-section label{
+.submit-section label {
     background-color: #596D48;
     color: white;
     border-radius: 7px;
@@ -204,33 +204,26 @@ form input:focus{
     font-weight: 600;
 }
 
-.submit-section label:hover{
+.submit-section label:hover {
     cursor: pointer;
     background-color:#56763a;
-
 }
 
-.submit-section p{
+.submit-section p {
     font-size: calc(10px + .6vw);
 }
 
-.submit-section a{
+.submit-section a {
     color: #596D48;
     font-weight: 600;
     text-decoration: none;
 }
 
-.submit-section a:hover{
+.submit-section a:hover {
     text-decoration: underline;
 }
 
-.invalid{
+.invalid {
     border: none !important;
     outline: 1px solid red !important;
 }
-
-
-
-
-
-
