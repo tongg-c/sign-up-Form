@@ -158,8 +158,6 @@ legend {
 }
 
 .label-and-input p {
-    position: relative;
-    top: -5px;
     color: red;
     font-weight: 400;
     letter-spacing: normal;
@@ -180,12 +178,6 @@ form input:focus {
     outline: 1px solid blue;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-
-/* input[type="password"]:invalid:required {
-    border: none;
-    outline: 1px solid red;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-} */
 
 .submit-section {
     padding-bottom: 0;
